@@ -1,0 +1,74 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+	"blocks": [
+		{
+			"alignment": "left",
+			"segments": [
+				{
+					"foreground": "#45F1C2",
+					"style": "plain",
+					"template": "<#64dff5>\ue285</> {{ .UserName }} \ue285",
+					"type": "session"
+				},
+				{
+					"foreground": "#14A5AE",
+					"style": "plain",
+					"template": " {{ .CurrentDate | date .Format }}",
+					"properties": {
+						"time_format": "2006/01/02-Mon-15:04:05"
+					},
+					"type": "time"
+				}
+			],
+			"type": "prompt"
+		},
+		{
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"foreground": "#0CA0D8",
+					"properties": {
+						"folder_separator_icon": "\\",
+						"style": "full"
+					},
+					"style": "plain",
+					"template": "\uf07b {{ .Path }} ",
+					"type": "path"
+				},
+				{
+					"foreground": "#86BBD8",
+					"powerline_symbol": "\ue0b0",
+					"properties": {
+						"fetch_stash_count": true,
+						"fetch_upstream_icon": true
+					},
+					"style": "plain",
+					"template": "\ue285 {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"type": "git"
+				}
+			],
+			"type": "prompt"
+		},
+		{
+			"alignment": "left",
+			"newline": true,
+			"segments": [
+				{
+					"foreground": "#ff66a6",
+					"style": "plain",
+					"template": "\u2665 ",
+					"type": "root"
+				},
+				{
+					"foreground": "#DA627D",
+					"style": "plain",
+					"template": "\ue285 ",
+					"type": "text"
+				}
+			],
+			"type": "prompt"
+		}
+	],
+	"version": 2
+}
