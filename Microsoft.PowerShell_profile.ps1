@@ -39,8 +39,13 @@ function stopOpenLDAP {
 function goubuntu {
   Set-Location \\wsl$\Ubuntu-18.04\root
 }
-function getprocess($Port){
+function getprocess($Port) {
   Get-Process -Id(Get-NetTCPConnection -LocalPort $Port).OwningProcess
+}
+
+# 设置WSL防火墙策略
+function addWsl2NFW {
+  New-NetFirewallRule -DisplayName "WSL" -Direction Inbound  -InterfaceAlias "vEthernet (WSL)"  -Action Allow
 }
 
 Set-Alias -Name open -Value explorer
@@ -50,6 +55,3 @@ Set-Alias -Name dk -Value docker
 
 Import-Module npm-completion
 Import-Module posh-git
-
-# 设置WSL防火墙策略
-# New-NetFirewallRule -DisplayName "WSL" -Direction Inbound  -InterfaceAlias "vEthernet (WSL)"  -Action Allow
