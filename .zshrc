@@ -107,3 +107,4 @@ alias dk='docker'
 alias runredis="sudo service redis-server start"
 alias cdwinhome="cd /mnt"
 alias cdwinuserdir="cd /mnt/c/Users/lizijing"
+alias showWinIp="echo \"Win IP: $(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')\""
