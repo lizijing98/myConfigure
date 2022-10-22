@@ -102,9 +102,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -alh'
 alias cls='clear'
-alias gomysql="mysql -uroot -hwindows -p'VDBI&uTb*t'"
 alias dk='docker'
-alias runredis="sudo service redis-server start"
 alias cdwinhome="cd /mnt"
 alias cdwinuserdir="cd /mnt/c/Users/lizijing"
 alias showWinIp="echo \"Win IP: $(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')\""
+
+alias runmysql="sudo service mysql start"
+alias restartmysql="sudo service mysql restart"
+alias stopmysql="sudo service mysql stop"
+alias gomysql="mysql -uroot -hwindows -p'VDBI&uTb*t'"
+
+alias runredis="sudo service redis-server start"
+alias restartredis="sudo service redis-server restart"
+alias stopredis="sudo service redis-server stop"
