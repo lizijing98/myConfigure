@@ -55,3 +55,6 @@ Set-Alias -Name dk -Value docker
 
 Import-Module npm-completion
 Import-Module posh-git
+
+# PSReadLine Tab 键设置菜单补全
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
