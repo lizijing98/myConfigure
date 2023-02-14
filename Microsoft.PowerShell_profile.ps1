@@ -7,22 +7,30 @@ function stopzookeeper {
   D:\\Program\\kafka_2.13-3.2.1\\bin\\windows\\zookeeper-server-stop.bat
 }
 function runkafka {
+  D:\\Program\\kafka_2.13-3.2.1\\bin\\windows\\zookeeper-server-start.bat D:\\Program\\kafka_2.13-3.2.1\\config\\zookeeper.properties
   D:\\Program\\kafka_2.13-3.2.1\\bin\windows\kafka-server-start.bat D:\\Program\\kafka_2.13-3.2.1\\config\server.properties
 }
 function stopkafka {
   D:\\Program\\kafka_2.13-3.2.1\\bin\\windows\\kafka-server-stop.bat
+  D:\\Program\\kafka_2.13-3.2.1\\bin\\windows\\zookeeper-server-stop.bat
 }
+
+function runnacos{
+  D:\\Program\\nacos\\bin\\startup.cmd -m standalone
+}
+
+function stopnacos{
+  D:\\Program\\nacos\\bin\\shutdown.cmd
+}
+
 function gomysql {
-  mysql -uroot -p'VDBI&uTb*t' 
+  mysql -uroot -p'jing980218' 
 }
 function runmysql {
   net start mysql
 }
 function stopmysql {
   net stop mysql
-}
-function gomysql5.7 {
-  mysql -uroot -p'VDBI&uTb*t' -P3307
 }
 function runmysql5.7 {
   net start mysql5.7
@@ -35,6 +43,12 @@ function runOpenLDAP {
 }
 function stopOpenLDAP {
   net stop OpenLDAP-slapd
+}
+function runneo4j {
+  net start neo4j
+}
+function stopneo4j {
+  net stop neo4j
 }
 function goubuntu {
   Set-Location \\wsl$\Ubuntu-18.04\root
@@ -52,6 +66,8 @@ Set-Alias -Name open -Value explorer
 Set-Alias -Name VDI -Value SangforCSClient
 Set-Alias -Name touch -Value New-Item
 Set-Alias -Name dk -Value docker
+# 压缩目录
+Set-Alias -Name zip -Value Compress-Archive
 
 Import-Module npm-completion
 Import-Module posh-git
