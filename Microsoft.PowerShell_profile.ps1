@@ -57,6 +57,11 @@ function getprocess($Port) {
   Get-Process -Id(Get-NetTCPConnection -LocalPort $Port).OwningProcess
 }
 
+function gitdels($Code) {
+  echo $Code
+  git branch -D @(git branch | select-string $Code | Foreach {$_.Line.Trim()})
+}
+
 # 设置WSL防火墙策略
 function addWsl2NFW {
   New-NetFirewallRule -DisplayName "WSL" -Direction Inbound  -InterfaceAlias "vEthernet (WSL)"  -Action Allow
