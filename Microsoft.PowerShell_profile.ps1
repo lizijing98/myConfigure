@@ -58,8 +58,9 @@ function getprocess($Port) {
 }
 
 function gitdels($Code) {
-  echo $Code
-  git branch -D @(git branch | select-string $Code | Foreach {$_.Line.Trim()})
+  git branch -D @(git branch | select-string "$Code" | Foreach {$_.Line.Trim()})
+  echo 'Remaining branches:'
+  git branch
 }
 
 # 设置WSL防火墙策略
