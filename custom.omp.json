@@ -18,6 +18,15 @@
 						"time_format": "2006/01/02-Mon-15:04:05"
 					},
 					"type": "time"
+				},
+				{
+					"foreground": "#0d93aa",
+					"style": "powerline",
+					"properties": {
+						"fetch_package_manager ": true
+					},
+					"template": "  {{ .Full }}",
+					"type": "node"
 				}
 			],
 			"type": "prompt"
@@ -33,18 +42,45 @@
 						"style": "full"
 					},
 					"style": "plain",
-					"template": "\uf07b {{ .Path }} ",
+					"template": "<#0CA0D8>\uf07b</> {{ .Path }} ",
 					"type": "path"
-				},
+				}
+			],
+			"type": "prompt"
+		},
+		{
+			"alignment": "left",
+			"newline": true,
+			"segments": [
 				{
 					"foreground": "#86BBD8",
 					"powerline_symbol": "\ue0b0",
 					"properties": {
-						"fetch_stash_count": true,
 						"fetch_upstream_icon": true
 					},
 					"style": "plain",
-					"template": "\ue285 {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"template": " {{ .UpstreamIcon }}{{ .HEAD }}",
+					"type": "git"
+				},
+				{
+					"foreground": "#86BBD8",
+					"properties": {
+						"fetch_stash_count": true
+					},
+					"style": "plain",
+					"template": "{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"type": "git"
+				},
+				{
+					"foreground": "#86BBD8",
+					"style": "plain",
+					"template": "\u2193{{ .Behind }} ",
+					"type": "git"
+				},
+				{
+					"foreground": "#86BBD8",
+					"style": "plain",
+					"template": "\u2191{{ .Ahead }} ",
 					"type": "git"
 				}
 			],
