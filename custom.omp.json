@@ -54,12 +54,8 @@
 			"segments": [
 				{
 					"foreground": "#86BBD8",
-					"powerline_symbol": "\ue0b0",
-					"properties": {
-						"fetch_upstream_icon": true
-					},
-					"style": "plain",
-					"template": " {{ .UpstreamIcon }}{{ .HEAD }}",
+					"style": "powerline",
+					"template": " {{ .HEAD }} ",
 					"type": "git"
 				},
 				{
@@ -67,20 +63,26 @@
 					"properties": {
 						"fetch_stash_count": true
 					},
-					"style": "plain",
-					"template": "{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+					"style": "powerline",
+					"template": "{{ if gt .StashCount 0 }}\uf692 {{ .StashCount }}{{ end }} ",
 					"type": "git"
 				},
 				{
 					"foreground": "#86BBD8",
-					"style": "plain",
+					"style": "powerline",
 					"template": "\u2193{{ .Behind }} ",
 					"type": "git"
 				},
 				{
 					"foreground": "#86BBD8",
-					"style": "plain",
+					"style": "powerline",
 					"template": "\u2191{{ .Ahead }} ",
+					"type": "git"
+				},
+				{
+					"foreground": "#86BBD8",
+					"style": "powerline",
+					"template": "{{ if (.Working.Changed) }}\uF044 {{ .Working.String }}{{ end }} ",
 					"type": "git"
 				}
 			],
