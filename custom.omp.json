@@ -15,7 +15,7 @@
 					"style": "plain",
 					"template": " {{ .CurrentDate | date .Format }}",
 					"properties": {
-						"time_format": "2006/01/02-Mon-15:04:05"
+						"time_format": "2006/01/02-Mon-15:04"
 					},
 					"type": "time"
 				},
@@ -23,6 +23,8 @@
 					"foreground": "#0d93aa",
 					"style": "powerline",
 					"properties": {
+						"home_enabled": true,
+						"display_mode": "always",
 						"fetch_package_manager ": true
 					},
 					"template": "  {{ .Full }}",
