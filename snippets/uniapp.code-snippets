@@ -1,0 +1,116 @@
+{
+	"uniapp CSS if APP-PLUS": {
+		"scope": "css, scss",
+		"prefix": "uniifapp",
+		"body": [
+			"/* #ifdef APP-PLUS */",
+			"",
+			"/* #endif */"
+		],
+		"description": "uniapp 条件编译: App"
+	},
+	"uniapp CSS if H5": {
+		"scope": "css, scss",
+		"prefix": "uniifh5",
+		"body": [
+			"/* #ifdef H5 */",
+			"",
+			"/* #endif */"
+		],
+		"description": "uniapp 条件编译: H5 环境"
+	},
+	"uniapp CSS if WEIXIN": {
+		"scope": "css, scss",
+		"prefix": "uniifwx",
+		"body": [
+			"/* #ifdef MP-WEIXIN */",
+			"",
+			"/* #endif */"
+		],
+		"description": "uniapp 条件编译: 微信小程序 环境"
+	},
+	"uniapp HTML if APP-PLUS": {
+		"scope": "html",
+		"prefix": "uniifapp",
+		"body": [
+			"<!-- #ifdef APP-PLUS -->",
+			"<!-- #endif -->"
+		],
+		"description": "uniapp 条件编译: App",
+	},
+	"uniapp HTML if H5": {
+		"scope": "html",
+		"prefix": "uniifh5",
+		"body": [
+			"<!-- #ifdef H5 -->",
+			"<!-- #endif -->"
+		],
+		"description": "uniapp 条件编译: H5",
+	},
+	"uniapp HTML if WEIXIN": {
+		"scope": "html",
+		"prefix": "uniifwx",
+		"body": [
+			"<!-- #ifdef MP-WEIXIN -->",
+			"<!-- #endif -->"
+		],
+		"description": "uniapp 条件编译: 微信小程序",
+	},
+	"uniapp JS if APP-PLUS": {
+		"scope": "javascript",
+		"prefix": "uniifapp",
+		"body": [
+			"// #ifdef APP-PLUS",
+			"// #endif"
+		],
+		"description": "uniapp 条件编译: App",
+	},
+	"uniapp JS if H5": {
+		"scope": "javascript",
+		"prefix": "uniifh5",
+		"body": [
+			"// #ifdef H5",
+			"// #endif"
+		],
+		"description": "uniapp 条件编译: H5",
+	},
+	"uniapp JS if WEIXIN": {
+		"scope": "javascript",
+		"prefix": "uniifwx",
+		"body": [
+			"// #ifdef MP-WEIXIN",
+			"// #endif"
+		],
+		"description": "uniapp 条件编译: 微信小程序",
+	},
+	"uniapp JS if not APP-PLUS": {
+		"scope": "javascript",
+		"prefix": "uninotapp",
+		"body": [
+			"// #ifndef APP-PLUS",
+			"console.debug('not in App');",
+			"// #endif"
+		],
+		"description": "uniapp 条件编译: not App",
+	},
+	"uniapp JS if not H5": {
+		"scope": "javascript",
+		"prefix": "uninoth5",
+		"body": [
+			"// #ifdef H5",
+			"console.debug('not in H5');",
+			"// #endif"
+		],
+		"description": "uniapp 条件编译: not H5",
+	},
+	"uniapp JS if not WEIXIN": {
+		"scope": "javascript",
+		"prefix": "uninotwx",
+		"body": [
+			"// #ifdef MP-WEIXIN",
+			"console.debug('not in miniprogram');",
+			"// #endif"
+		],
+		"description": "uniapp 条件编译: not 微信小程序",
+	}
+}

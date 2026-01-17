@@ -1,0 +1,318 @@
+{
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "editor.autoClosingBrackets": "always",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.startupEditor": "none",
+    "terminal.integrated.fontWeight": "normal",
+    "java.jdt.ls.java.home": "d:\\Java\\jdk17",
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.defaultDateLocale": null,
+    "gitlens.defaultDateFormat": "YYYY-MM-DD hh:mm:ss",
+    "gitlens.defaultDateShortFormat": "YYYY/MM/SS",
+    "gitlens.defaultTimeFormat": "hh:mm:ss",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "update.enableWindowsBackgroundUpdates": false,
+    "security.workspace.trust.enabled": false,
+    "redhat.telemetry.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "remote.SSH.remotePlatform": {
+        "huawei": "linux",
+        "aliyun": "linux"
+    },
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules",
+        "node_modules/**"
+    ],
+    "window.commandCenter": true,
+    "workbench.editorAssociations": {
+        "*.xlsx": "cweijan.officeViewer",
+        "*.class": "cweijan.classViewer",
+        "{git,gitlens}:/**/*.{md,csv,svg}": "default"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.trailingComma": "all",
+    "prettier.singleQuote": true,
+    "prettier.bracketSameLine": true,
+    "git.confirmSync": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "git.ignoreRebaseWarning": true,
+    "editor.accessibilitySupport": "off",
+    "commentTranslate.hover.concise": true,
+    "git.openRepositoryInParentFolders": "always",
+    "commentTranslate.targetLanguage": "en",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "files.associations": {
+        "*.json": "jsonc",
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "*.env.*": "env",
+        "*.js": "javascript"
+    },
+    "gitlens.advanced.messages": {
+        "suppressCreatePullRequestPrompt": true
+    },
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "minapp-vscode.disableAutoConfig": true,
+    "svg.preview.mode": "svg",
+    "gitlens.views.branches.files.layout": "tree",
+    "git.suggestSmartCommit": false,
+    "editor.fontFamily": "CodeNewRoman Nerd Font,'微软雅黑'",
+    "editor.cursorBlinking": "smooth",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Comment",
+                "scope": [
+                    "comment",
+                    "comment.block",
+                    "comment.block.documentation",
+                    "comment.line",
+                    "comment.line.double-slash",
+                    "punctuation.definition.comment",
+                ],
+                "settings": {
+                    // "foreground": "#90d8ac", //设置颜色
+                    "fontStyle": "bold", //加粗
+                }
+            },
+        ]
+    },
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "explorer.confirmDragAndDrop": false,
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "vscode-edge-devtools.webhintInstallNotification": true,
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "switch:command",
+        "stash-push:command"
+    ],
+    "search.quickOpen.history.filterSortOrder": "recency",
+    "search.quickOpen.includeHistory": false,
+    "editor.wordWrap": "on",
+    "editor.linkedEditing": true,
+    "vscodeGoogleTranslate.preferredLanguage": "English",
+    "commentTranslate.hover.content": false,
+    "commentTranslate.hover.enabled": false,
+    "commentTranslate.maxTranslationLength": 100,
+    "gitlens.ai.experimental.provider": "openai",
+    "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+    "liveServer.settings.useLocalIp": true,
+    "vscodeGoogleTranslate.proxyHost": "127.0.0.1",
+    "vscodeGoogleTranslate.proxyPort": "7890",
+    "explorer.copyRelativePathSeparator": "/",
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.showWelcomeOnInstall": false,
+    "gitlens.plusFeatures.enabled": false,
+    "oneDarkPro.bold": true,
+    "[dotenv]": {},
+    "css.format.spaceAroundSelectorSeparator": true,
+    "git.supportCancellation": true,
+    "editor.suggestSelection": "first",
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    "editor.quickSuggestionsDelay": 6,
+    "vue.autoInsert.dotValue": true,
+    "editor.minimap.renderCharacters": false,
+    "vscode-office.editorTheme": "Dracula",
+    "commit-message-editor.staticTemplate": [
+        "feat: Short description",
+        "",
+        "Message body",
+        "",
+        "Message footer"
+    ],
+    "commit-message-editor.dynamicTemplate": [
+        "{type}{scope}: {jira} {description}",
+        "",
+        "{body}",
+        "",
+        "{breaking_change}{footer}"
+    ],
+    "commit-message-editor.tokens": [
+        {
+            "label": "Type",
+            "name": "type",
+            "type": "enum",
+            "description": "修改类型",
+            "options": [
+                {
+                    "label": "---",
+                    "value": ""
+                },
+                {
+                    "label": "build",
+                    "description": "影响项目构建或依赖项修改（示例范围：gulp、broccoli、npm）"
+                },
+                {
+                    "label": "chore",
+                    "description": "其他修改"
+                },
+                {
+                    "label": "ci",
+                    "description": "持续集成相关文件修改"
+                },
+                {
+                    "label": "docs",
+                    "description": "文档修改"
+                },
+                {
+                    "label": "feat",
+                    "description": "新功能、新特性"
+                },
+                {
+                    "label": "fix",
+                    "description": "修改 bug"
+                },
+                {
+                    "label": "perf",
+                    "description": "代码优化"
+                },
+                {
+                    "label": "refactor",
+                    "description": "代码重构"
+                },
+                {
+                    "label": "revert",
+                    "description": "恢复上一次提交"
+                },
+                {
+                    "label": "style",
+                    "description": "代码格式修改"
+                },
+                {
+                    "label": "test",
+                    "description": "测试用例新增、修改"
+                },
+                {
+                    "label": "modify",
+                    "value": "modify",
+                    "description": "修改代码逻辑"
+                },
+                {
+                    "label": "config",
+                    "value": "config",
+                    "description": "修改配置"
+                }
+            ]
+        },
+        {
+            "label": "Scope",
+            "name": "scope",
+            "description": "A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., \"feat(parser): add ability to parse arrays\".",
+            "type": "text",
+            "multiline": false,
+            "prefix": "(",
+            "suffix": ")"
+        },
+        {
+            "label": "Short description",
+            "name": "description",
+            "description": "Short description in the subject line.",
+            "type": "text",
+            "multiline": false
+        },
+        {
+            "label": "Body",
+            "name": "body",
+            "description": "Optional body",
+            "type": "text",
+            "multiline": true,
+            "lines": 5,
+            "maxLines": 10
+        },
+        {
+            "label": "Breaking change",
+            "name": "breaking_change",
+            "type": "boolean",
+            "value": "BREAKING CHANGE: ",
+            "default": false
+        },
+        {
+            "label": "Footer",
+            "name": "footer",
+            "description": "Optional footer",
+            "type": "text",
+            "multiline": true
+        },
+        {
+            "label": "jira",
+            "name": "jira",
+            "type": "text"
+        }
+    ],
+    "remote.WSL.downloadInBackground": false,
+    "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+    "fittencode.languagePreference.displayPreference": "zh-cn",
+    "fittencode.languagePreference.commentPreference": "zh-cn",
+    "workbench.productIconTheme": "material-product-icons",
+    "prettier.endOfLine": "auto",
+    "eslint.workingDirectories": [],
+    "prettier.configPath": ".prettierrc",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "false"
+        },
+        "prettyhtml": {
+            "printWidth": 100,
+            "singleQuote": false,
+            "wrapAttributes": false,
+            "sortAttributes": false
+        }
+    },
+    "vetur.format.enable": false,
+    "vetur.validation.template": false,
+    "vue.server.hybridMode": "typeScriptPluginOnly",
+    "gitlens.views.commits.avatars": false,
+    "material-icon-theme.activeIconPack": "vue_vuex",
+    "material-icon-theme.files.associations": {},
+    "material-icon-theme.languages.associations": {},
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.files.color": "#C0C0C0",
+    "material-icon-theme.folders.associations": {
+        "https": "Client"
+    },
+    "editor.fontWeight": "normal",
+    "workbench.colorTheme": "Default Dark+",
+    "editor.renderWhitespace": "boundary",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.indentSize": "tabSize"
+}

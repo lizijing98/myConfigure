@@ -1,0 +1,44 @@
+{
+	"Vue Init 模版": {
+		"prefix": "vueinit",
+		"body": [
+			"<template>",
+			"\t<div></div>",
+			"</template>",
+			"<script>",
+			"export default {}",
+			"</script>",
+			"<style lang=\"scss\" scoped></style>"
+		],
+		"description": "Vue 模版"
+	},
+	"Uniapp Init 模版-页面": {
+		"prefix": "unipageinit",
+		"body": [
+			"<template>",
+			"\t<page-meta :page-style=\"commonPageStyle\" />",
+			"\t<view class=\"page-container\"></view>",
+			"</template>",
+			"<script>",
+			"export default {};",
+			"</script>",
+			"<style lang=\"scss\" scoped></style>"
+		],
+		"description": "Uniapp 模版-页面"
+	},
+	"Uniapp Init 模版-组件": {
+		"prefix": "unicompinit",
+		"body": [
+			"<template>",
+			"\t<view class=\"\" />",
+			"</template>",
+			"<script>",
+			"export default {",
+			"\tname: \"$TM_FILENAME_BASE\",",
+			"};",
+			"</script>",
+			"<style lang=\"scss\" scoped></style>\n"
+		],
+		"description": "Uniapp 模版-组件"
+	}
+}

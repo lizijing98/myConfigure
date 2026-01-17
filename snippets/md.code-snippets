@@ -1,0 +1,10 @@
+{
+	"插入链接": {
+		"scope": "markdown, md",
+		"prefix": "link",
+		"body": [
+			"[$1]($2)"
+		],
+		"description": "插入链接"
+	}
+}

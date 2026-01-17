@@ -1,0 +1,106 @@
+{
+  "自定义 Console.debug": {
+    "prefix": "cdb",
+    "body": [
+      "console.debug(${0:`[${TM_FILENAME/(.*)\\..+$/$1/}] ==>`, }${1|``,`: `\\, |});"
+    ],
+    "description": "自定义 Console.debug"
+  },
+  "TODO": {
+    "prefix": "todo",
+    "body": [
+      "// TODO: $1"
+    ],
+    "description": "todo"
+  },
+  "注释Todo": {
+    "prefix": "todoann",
+    "body": [
+      "// TODO: 放开注释",
+    ],
+    "description": "注释有用的内容"
+  },
+  "Line Index": {
+    "prefix": "lindex",
+    "body": [
+      "$TM_LINE_INDEX $TM_LINE_NUMBER $TM_SELECTED_TEXT "
+    ],
+    "description": "Line Index"
+  },
+  "Log Select": {
+    "prefix": "logthis",
+    "body": [
+      "console.log(\"$TM_SELECTED_TEXT :\", $TM_SELECTED_TEXT);"
+    ],
+    "description": "Console.log 选中的内容"
+  },
+  "Debug Log Select": {
+    "prefix": "debugthis",
+    "body": [
+      "console.debug(\"$TM_SELECTED_TEXT :\", $TM_SELECTED_TEXT);"
+    ],
+    "description": "Console.debug 选中的内容"
+  },
+  "Warn Log Select": {
+    "prefix": "warnthis",
+    "body": [
+      "console.warn(\"$TM_SELECTED_TEXT :\", $TM_SELECTED_TEXT);"
+    ],
+    "description": "Console.warn 选中的内容"
+  },
+  "模版字符串": {
+    "prefix": "tplstr",
+    "body": [
+      "`${1}`"
+    ],
+    "description": "模版字符串"
+  },
+  "声明方法导出": {
+    "prefix": "expfun",
+    "body": [
+      "export function $1(){ }"
+    ],
+    "description": "声明方法导出"
+  },
+  "Promise响应处理": {
+    "prefix": "thres",
+    "body": [
+      ".then((res)=>{ $1})"
+    ],
+    "description": "异步Promise响应处理"
+  },
+  "Promise异常处理": {
+    "prefix": "catcherr",
+    "body": [
+      ".catch((err)=>{ $1})"
+    ],
+    "description": "异步Promise异常处理"
+  },
+  "三元运算符": {
+    "prefix": "cond",
+    "body": [
+      "${1:$TM_SELECTED_TEXT} ? $2 : $3"
+    ],
+    "description": "三元运算?:"
+  },
+  "export default": {
+    "prefix": "expdef",
+    "body": [
+      "export default $1"
+    ],
+    "description": "export default"
+  },
+  "Array find": {
+    "prefix": "array.find",
+    "body": [
+      "${1}.find(item => $2)"
+    ],
+  },
+  "else if": {
+    "prefix": "elif",
+    "body": [
+      "else if($1){\n\t$2\n}"
+    ],
+    "description": "else if"
+  },
+}
